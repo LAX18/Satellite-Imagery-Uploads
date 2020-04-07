@@ -8,5 +8,8 @@ for /f "tokens=1-4 delims=/ " %%i in ("%date%") do (
 )
 set datestr=%month%_%day%_%year%
 git add *
-git commit -m "Automated Image Upload - "+datestr
+set a="'Automated Image Upload - "
+set c="'"
+set b=a and datestr and c
+git commit -m b
 git push
