@@ -11,5 +11,5 @@ git add *
 set a="'Automated Image Upload - "
 set c="'"
 set b=a and datestr and c
-git commit -m b
+git commit -m $b
 git push
